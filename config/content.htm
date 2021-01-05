@@ -87,12 +87,35 @@
 <p><span>Ethernet is defined by the IEEE 802.3 specification, which sets the standard and interoperability between devices, allowing communication over computer networks. These specifications control how data physically travels between nodes on both the physical layer and the data link layer through media access control (MAC). The hardware controlled by these specifications include NICs, wiring (i.e., cat 5, 5e, and 6) including the RJ-45 connectors, switches, and hubs.</span></p>
 <p><span>乙太網路這種可以用電腦來和設備來進行通訊是由IEE 802.3 的規範所定義的這些規範控制資料要如何傳輸至其它設備和數據鏈通過媒體進入控制。這些規範所控制的硬件包括NIC，包括RJ-45連接器，交換機和集線器的佈線（即Cat 5、5e和6）。</span></p>
 <h1><span>HW2</span></h1>
-<h2><span>作業二之一</span></h2>
 <p>google&gt;mde.tw&gt;cp2020&gt;topic&gt;w4~w9&gt;HW2&gt;變數的連結，然後打開第一版的命令列，輸入python後按enter，它會跑出三個大於符號，在三個大於符號後打上print(4)，進入後到變數的連結<a href="https://books.trinket.io/pfe/02-variables.html">https://books.trinket.io/pfe/02-variables.html</a><span> </span>，在variable這個大標題底下有一行" message = 'And now for something completely different' "複製致命令列，接著打上print(message)，然後它會幫你把message=之後的那一行打出來，所以代表說只要print某樣東西，就會跳出那樣東西所代表的涵義。你現在只要在kaggle上的new notebook，將解題參考的連結<span> </span><a href="https://www.kaggle.com/mdecourse/cp2020-hw2">https://www.kaggle.com/mdecourse/cp2020-hw2</a><span> 中第一個大方框的第一行有一句話"</span></p>
 <pre><span class="c1">python read url file data"複製下來，貼到新的網頁上。在第二個搜尋結果裡有一個頁碼121，<br/>將它最後一個方框中的所有內複製下來，在new notebook的第一行打上"for i in range(5):<br/>                                                               print("i = ", i)<br/>後按下enter，之後將kaggl第一大格中，import之後的資訊全部複製下來，貼到notebook上，之後再新增<br/>一行，把imprt到for line in都貼上去並且砍掉cpla那行，新增print(line)後，按下旁邊的播放鍵，<br/>就可得到一甲的名單，接著再得到一甲名單的那一個方格中新增"...<br/>                                                    &lt;a href="https://github.com/學號/cp2020"&gt;學號&lt;/a&gt;<br/>                                                    ...<br/>"，就可得到分組名單 <a href="file:///E:/fall2020_v2/data/tmp/cpw5/anchor_html.html">file:///E:/fall2020_v2/data/tmp/cpw5/anchor_html.html</a>。</span></pre>
-<h2>作業二之二</h2>
-<p>利用作業二之一的方法得到一甲的名單，再跟cp2020比較，就可知道那些人加退選。</p>
-<h2>作業二之三</h2>
-<p>從作業二之一的方法中就可以得到正確的w3網頁的html資料。</p>
 <h1>HW3</h1>
-<p><span></span></p>
+<h2>page.24~26</h2>
+<h3>page.24</h3>
+<br/>Exercise 24 (and<span> </span><a href="https://www.practicepython.org/solution/2015/11/01/24-draw-a-game-board-solutions.html">Solution</a>)
+<p><em>This exercise is Part 1 of 4 of the Tic Tac Toe exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2015/11/16/26-check-tic-tac-toe.html">Part 2</a>,<span> </span><a href="https://www.practicepython.org/exercise/2015/11/26/27-tic-tac-toe-draw.html">Part 3</a>, and<span> </span><a href="https://www.practicepython.org/exercise/2016/08/03/29-tic-tac-toe-game.html">Part 4</a>.</em></p>
+<p>Time for some fake graphics! Let’s say we want to draw game boards that look like this:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"> <span class="o">---</span> <span class="o">---</span> <span class="o">---</span> 
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span> 
+ <span class="o">---</span> <span class="o">---</span> <span class="o">---</span>  
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span> 
+ <span class="o">---</span> <span class="o">---</span> <span class="o">---</span>  
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span> 
+ <span class="o">---</span> <span class="o">---</span> <span class="o">---</span> </code></pre>
+</figure>
+<p>This one is 3x3 (like in tic tac toe). Obviously, they come in many other sizes (8x8 for chess, 19x19 for Go, and many more).</p>
+<p>Ask the user what size game board they want to draw, and draw it for them to the screen using Python’s<span> </span><code class="highlighter-rouge">print</code><span> </span>statement.</p>
+<p>Remember that in Python 3, printing to the screen is accomplished by</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="k">print</span><span class="p">(</span><span class="s">"Thing to show on screen"</span><span class="p">)</span></code></pre>
+</figure>
+<p><span></span>這是一個屬於Tic Tac Toe第4節第一部分的活動，還有第二、第三和第四部份的活動。</p>
+<p>是購買一些假圖形的時候了，讓我們來製作像以下這個圖形:</p>
+<pre><code class="language-python" data-lang="python"> <span class="o">---</span> <span class="o">---</span> <span class="o">---</span> 
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span> 
+ <span class="o">---</span> <span class="o">---</span> <span class="o">---</span>  
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span> 
+ <span class="o">---</span> <span class="o">---</span> <span class="o">---</span>  
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span> 
+ <span class="o">---</span> <span class="o">---</span> <span class="o">---</span> <br/></code>這是一個3乘3的架構(像在Tic Tac Toe一樣)，當然還有其他種架構(像是國際象棋8乘8、圍棋19乘19等等更多)<br/>問問使用者哪種架構是他們想製作的，然後用python的print指令製作它。<br/>有一件事情必須要記得，在python 3裡，想要打印至螢幕，必須由下列指令完成:print(你想秀在螢幕上的東西)<br/><br/><br/></pre>
